@@ -11,12 +11,14 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'primary-color': '#F85559',
                     }
                 }
             }
         }
     </script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/4ffc8ba6c9.js" crossorigin="anonymous"></script>
     <!-- Tailwind abd daisy ui integration  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,22 +27,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        .font-lato{font-family: 'Lato', sans-serif;}
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 </head>
 
 <body class="font-lato">
     <nav>
-        
+
+
     </nav>
     <header>
+        <div class="mt-8 h-30 container mx-auto navbar bg-[#F85559] drop-shadow-lg justify-between rounded-full p-7">
+            <div class="dropdown visible md:visible relative lg:absolute invisible ">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white visible lg:invisible" fill="white"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class=" md:invisible absolute menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex  text-white lg:gap-3 invisible absolute  md:invisible   lg:visible md:">
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </ul>
+
+            </div>
+            <div class=" text-white text-2xl font-bold text-center gap-2 justify-center items-center">
+                <img src="images/logo.png" alt="">
+              <h2>Fruit Burst</h2>
+            </div>
+            <div class="">
+                <div class="form-control">
+                    <input type="text" placeholder="Search  " class="input w-20 md:w-auto lg:w-70 rounded-full h-10  " />
+                </div>
+            </div>
 
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
